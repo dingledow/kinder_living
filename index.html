@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kinder Living is a counselling and ADHD coaching service that provides support for mental health and ADHD.">
+    <meta name="keywords" content="Kinder Living, Counsellor, ADHD Coach, mental health, ADHD support, ADHD coaching">
+    <meta name="author" content="Kinder Living">
+    <title>Kinder Living: Counsellor & ADHD Coach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Aboreto&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Figtree', Helvetica, Arial, serif;
+            background-color: #FBF5F0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 16px;
+            row-gap: 0;
+            padding: 16px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .logo-container {
+            grid-column: span 12;
+            display: flex;
+            justify-content: center;
+            margin: 24px 0 54px;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        .heading-container {
+            grid-column: span 3 / span 3;
+            grid-column-start: 2;
+            padding-right: 16px;
+            border-right: 1px solid #D3CAC5;
+        }
+
+        .description-container {
+            grid-column: span 6 / span 6;
+            grid-column-start: 5;
+        }
+
+        h2 {
+            font-family: 'Aboreto', cursive;
+            color: #351F1A;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: right;
+            margin-top: 0;
+        }
+
+        p {
+            text-align: left;
+            color: #351F1A;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0 0 16px;
+        }
+
+        a {
+            font-family: 'Alegreya', serif;
+            font-weight: 700;
+            font-style: italic;
+            text-decoration: none;
+            color: #351F1A;
+            position: relative;
+            transition: color 0.15s ease-in-out;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #847570;
+            transition: width 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        a:hover {
+            color: #847570;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        a:active::after {
+            transition: width 0.15s ease-in-out;
+            width: 0;
+            right: 0;
+            left: auto;
+        }
+
+        .description-container span{
+            font-family: 'Alegreya', serif;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 1px;
+            font-size: 16px;
+            color: #847570;
+        }
+
+        @media (max-width: 768px) {
+            .heading-container {
+                grid-column: span 10 / span 10;
+                grid-column-start: 2;
+                border-right: none;
+                border-top: 1px solid #D3CAC5;
+                padding-top: 24px;
+            }
+            .description-container {
+                grid-column: span 10 / span 10;
+                grid-column-start: 2;
+            }
+            h2 {
+                font-size: 20px;
+                line-height: 24px;
+                text-align: left;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .description-container span{
+            font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .heading-container {
+                grid-column: span 12 / span 12;
+                grid-column-start: 1;
+            }
+            .description-container {
+                grid-column: span 12 / span 12;
+                grid-column-start: 1;
+            }
+            h2 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            .logo-container {
+                margin: 16px 0 32px;
+            }
+            .logo {
+                max-width: 150px;
+            }
+            .description-container span{
+            font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="logo-container">
+            <img 
+                src="img/kinder-living-logo.png" 
+                alt="Kinder Living" 
+                class="logo"
+            >
+        </div>
+        <div class="heading-container">
+            <h2>About</h2>
+        </div>
+        <div class="description-container">
+            <p>BACP registered Counsellor <span>(MBACP)</span> and ADHD Coach based in North East England.
+            <p>Available for a discovery call — <a href="mailto:jess@kinderliving.co">let's chat!</a></p>
+        </div>
+    </div>
+</body>
+</html>
